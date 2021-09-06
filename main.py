@@ -9,7 +9,7 @@ COMPANY_NAME = "Tesla Inc"
 def get_news():
     parameters_news = {
         "qInTitle": COMPANY_NAME,
-        "apiKey": "70f130fa1cea4305b3f38182dc599ac6",
+        "apiKey": "",
         "language": "en"
 
     }
@@ -40,7 +40,7 @@ def get_news():
 parameters_stock = {
     "function": "TIME_SERIES_DAILY",
     "symbol": STOCK,
-    "apikey": "QOBHD7KPD1RGMDSB"
+    "apikey": ""
 }
 
 response_stock = requests.get(url="https://www.alphavantage.co/query", params=parameters_stock)
